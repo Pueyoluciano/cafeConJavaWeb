@@ -1,0 +1,25 @@
+{
+  "name": "cafeconjavaweb",
+  "version": "1.0.0",
+  "description": "Cafe Con Java Web Page",
+  "main": "sources/main.js)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pepitogithub/cafeConJavaWeb.git"
+  },
+  "author": "Luciano Pueyo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pepitogithub/cafeConJavaWeb/issues"
+  },
+  "homepage": "https://github.com/pepitogithub/cafeConJavaWeb#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.1.0",
+    "angular": "^1.7.2",
+    "bootstrap": "^4.1.2",
+    "jquery": "^3.3.1"
+  }
+}
