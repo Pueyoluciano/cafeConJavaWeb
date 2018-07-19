@@ -2,7 +2,7 @@
   "name": "cafeconjavaweb",
   "version": "1.0.0",
   "description": "Cafe Con Java Web Page",
-  "main": "sources/main.js)",
+  "main": "sources/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
