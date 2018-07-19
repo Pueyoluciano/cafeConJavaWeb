@@ -9,3 +9,6 @@ Cafe con Java Web Page
 * Angular.js
 * Jquery
 * Fontawesome
+
+## Se pueden poner emojis en el readme
+ :godmode: :hurtrealbad: :feelsgood:
