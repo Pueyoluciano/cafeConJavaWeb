@@ -15,87 +15,50 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 
-<body ng-app="cafeconjavaApp" ng-controller="mainCtrl">
-    <div id="MainContainer" class="container">
-        <header>
-            <h1>Café Con Java THE WEB PEIG
-                <i class="fas fa-coffee"></i>
-            </h1>
-        </header>
-        <main>
-            <section>
-                <article>
-                    <h2>Etapa 1</h2>
-                    <p>
-                        --- Café Con Java ---<br>
-                        Somos un podcadst asdlkasdkjdakjsfas el mundo de sistemas asdasdasd ni café ni Java asdasdasd<br>
-                        El Fede - El Cris - El Bernie - El Lucho - El Mati <br>
-                        Escuchanos en:<br>
-                        Spotify - audioboom - applepodcasts<br>
-                        Seguinos en:<br>
-                        facebook - instagram - twitter
-                    </p>
-                </article>
-            </section>
-            <section>
-                <article>
-                    <h2>Landing Page</h2>
-                    <ul>
-                        <li>
-                            Lo importante. www.CAFE-CON-JAVA.com.ar
-                        </li>
-                        <li>
-                            si escribis café con java en Google tenes que caer acá. tiene que tener un resumen de lo mas importante, cosa que en 5 minutos
-                            entiendas la idea
-                        </li>
-                        <li>
-                            Puede haber links de redes, los episodios, algunas imagenes. etc
-                        </li>
-                    </ul>
-                </article>
-                <article>
-                    <h2>Tripulación (The Crew)</h2>
-                    <ul>
-                        <li>
-                            Una seccion para conocer un poco de cada uno, quienes somos. Algo que tenga un poco de humor para contar sobre nosotros.
-                        </li>
-                        <li>
-                            Una foto tipo Carné y un texto onda Twitter(140 caracteres).
-                        </li>
-                        <li>
-                            proyectos personales de uan.
-                        </li>
-                    </ul>
-                </article>
-                <article>
-                    <h2>Galería</h2>
-                    <ul>
-                        <li>
-                            Una sección para volcar todas esas imagenes que no tenemos ni puta idea que hacer.
-                        </li>
-                        <li>
-                            galería con onda. TIPO tumblr/printerest/asd.
-                        </li>
-                    </ul>
-                </article>
-                <article>
-                    <h2>Embebidos</h2>
-                    <ul>
-                        <li>
-                            Una seccion con mas detalle de nuestro contenido, episodios, videos (?), analitycs tal vez.
-                        </li>
-                    </ul>
-                </article>
-            </section>
-        </main>
-        <footer>
+<body ng-app="cafeconjavaApp" ng-controller="mainCtrl" class="container-fluid">
+    <main class="row">
+        <section id="Contenido" class="tab-content col-8">
+            <article id="CafeConJava" class="tab-pane fade in active" ng-include="'pages/cafeconjava.html'" />
+            <article id="Temporadas" class="tab-pane fade" ng-include="'pages/temporadas.html'" />
+            <article id="Especiales" class="tab-pane fade" ng-include="'pages/especiales.html'" />
+            <article id="Fotos" class="tab-pane fade" ng-include="'pages/fotos.html'" />
+        </section>
+
+        <nav id="Navegacion" class="col-4">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a data-toggle="tab" href="#CafeConJava">Café Con Java</a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#Temporadas">Temporadas</a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#Especiales">Especiales</a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#Fotos">fotos!</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/cafeconjavapod/" target="blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="https://www.instagram.com/cafeconjavapod/" target="blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/cafeconjavapod/" target="blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </main>
+    <!-- <footer>
             <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
                 <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
             </a>
             <br />Esta obra está bajo una
             <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.
-        </footer>
-    </div>
+        </footer> -->
 
     <script src="sources/main.js"></script>
 </body>
