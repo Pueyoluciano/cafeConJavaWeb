@@ -1,56 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
+    <base href="/">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Café Con Java</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/angular/angular.min.js"></script>
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
+    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
 
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <!-- escentials -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <script src="node_modules/angular/angular.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="resources/icon/ccj.png" />
     <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+    <!-- Angular -->
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+    <script src="node_modules/angular-resource/angular-resource.min.js"></script>
 </head>
 
-<body ng-app="cafeconjavaApp" ng-controller="mainCtrl" class="container-fluid">
-    <main class="row">
-        <section id="Contenido" class="tab-content col-8">
-            <article id="CafeConJava" class="tab-pane fade in active" ng-include="'pages/cafeconjava.html'" />
-            <article id="Temporadas" class="tab-pane fade" ng-include="'pages/temporadas.html'" />
-            <article id="Especiales" class="tab-pane fade" ng-include="'pages/especiales.html'" />
-            <article id="Fotos" class="tab-pane fade" ng-include="'pages/fotos.html'" />
-        </section>
-
-        <nav id="Navegacion" class="col-4">
-            <ul class="nav nav-tabs">
-                <li class="active">
-                    <a data-toggle="tab" href="#CafeConJava">Café Con Java</a>
+<body id="CafeConJava" ng-app="cafeConJavaApp" ng-controller="cafeConJavaController">
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/principal">Café Con Java</a>
                 </li>
                 <li>
-                    <a data-toggle="tab" href="#Temporadas">Temporadas</a>
+                    <a href="/temporadas">Temporadas</a>
                 </li>
                 <li>
-                    <a data-toggle="tab" href="#Especiales">Especiales</a>
+                    <a href="/especiales">Especiales</a>
                 </li>
                 <li>
-                    <a data-toggle="tab" href="#Fotos">fotos!</a>
+                    <a href="/fotos">fotos!</a>
                 </li>
-                <li>
-                    <a href="https://www.facebook.com/cafeconjavapod/" target="blank">
+                <li class="social-media">
+                    <a href="https://www.facebook.com/cafeconjavapod/" target="_blank">
                         <i class="fab fa-facebook-square"></i>
                     </a>
-                    <a href="https://www.instagram.com/cafeconjavapod/" target="blank">
+                    <a href="https://www.instagram.com/cafeconjavapod/" target="_blank">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="https://twitter.com/cafeconjavapod/" target="blank">
+                    <a href="https://twitter.com/cafeconjavapod/" target="_blank">
                         <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://open.spotify.com/search/results/Caf%C3%A9%20Con%20Java" target="_blank">
+                        <i class="fab fa-spotify"></i>
                     </a>
                 </li>
             </ul>
         </nav>
+    </header>
+    <main>
+        <article ng-view></article>
     </main>
     <!-- <footer>
             <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
@@ -60,7 +65,9 @@
             <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.
         </footer> -->
 
-    <script src="sources/main.js"></script>
+    <script src="sources/angular/modules/cafeConJavaApp.js"></script>
+    <script src="sources/angular/config/cafeConJavaConfig.js"></script>
+    <script src="sources/angular/controllers/cafeConJavaController.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,10 @@
+@font-face {
+  font-family: sansation;
+  src: url("../resources/fonts/sansation/Sansation_Light.ttf");
+}
+.transitions {
+  -webkit-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}

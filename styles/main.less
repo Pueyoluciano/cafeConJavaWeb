@@ -1,17 +1,65 @@
-body {
-    background-color: #2d2d2d;
-    color: #f0f0f0;
+@import "colores.less";
+@import "commons.less";
+* {
+    margin: 0;
+    padding: 0;
 }
 
-#MainContainer {
-    // display: flex;
-    // height: 100vh;
-    // flex-direction: column;
-    // main {
-    //     flex: 1 0 auto;
-    // }
-    // footer {
-    //     text-align: center;
-    //     flex-shrink: 0;
-    // }
+html {
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @bg-color-from: rgb(60, 60, 60);
+    @bg-color-to: rgb(40, 40, 40);
+    background: -webkit-linear-gradient( to bottom, @bg-color-from, @bg-color-to);
+    background: -moz-linear-gradient( to bottom, @bg-color-from, @bg-color-to);
+    background: -ms-linear-gradient( to bottom, @bg-color-from, @bg-color-to);
+    background: -o-linear-gradient( to bottom, @bg-color-from, @bg-color-to);
+    background: linear-gradient( to bottom, @bg-color-from, @bg-color-to);
+}
+
+#CafeConJava {
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 1;
+    color: @ccj-blanco;
+    font-family: sansation, serif;
+    font-size: 3em;
+    header {
+        width: 25%;
+        align-items: flex-end;
+        nav ul {
+            list-style-type: none;
+            text-align: right;
+            margin: 25px 25px 0;
+            li {
+                margin-bottom: 80px;
+                border-bottom: 1px solid @ccj-blanco;
+            }
+            li.social-media {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            li:hover {
+                border-bottom: 1px solid @ccj-principal;
+                .transitions;
+            }
+            a {
+                text-decoration: none;
+                color: @ccj-blanco;
+                text-transform: uppercase;
+            }
+            a:hover {
+                color: @ccj-secundario;
+                .transitions;
+            }
+        }
+    }
+    main {
+        width: 75%;
+    }
 }
