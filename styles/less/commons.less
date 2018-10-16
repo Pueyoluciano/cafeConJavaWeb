@@ -1,0 +1,125 @@
+// out:false, main:styles.less
+@font-face {
+    font-family: sansation;
+    src: url("../../resources/fonts/sansation/Sansation_Light.ttf");
+}
+
+.transitions {
+    @transition-time: .2s;
+    -webkit-transition: all @transition-time;
+    -ms-transition: all @transition-time;
+    -o-transition: all @transition-time;
+    transition: all @transition-time;
+}
+
+.imagenTextoVertical {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    // background: linear-gradient(to top, rgba(0,0,0, .8), rgba(0,0,0, 0));
+
+    .carousel-control-prev{
+        background: linear-gradient( to left, rgba(0,0,0,0), rgba(0,0,0,.8));
+    }
+
+    .carousel-control-next {
+        background: linear-gradient( to right, rgba(0,0,0,0), rgba(0,0,0,.8));
+    }
+
+    .carousel-caption {
+        background-color: rgba(0,0,0, .5);
+        h3 {
+            color: @ccj-principal;
+        }
+
+        p {
+            color: @ccj-secundario;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .texto {
+        text-align: center;
+        width: 90%;
+
+        .ccjNombre {
+            font-size: 2em;
+            color: @ccj-principal;
+        }
+    }
+
+
+}
+.imagenTextoHorizontal {
+    &.normal {
+        background: linear-gradient(to right, rgba(0,0,0, .8), rgba(0,0,0, 0));
+        flex-direction: row;
+        
+        p {
+            text-align: left;
+        }
+    }
+
+    &.reverso {
+        background: linear-gradient(to left, rgba(0,0,0, .8), rgba(0,0,0, 0));
+        flex-direction: row-reverse;
+        
+        p {
+            text-align: right;
+        }
+    }
+
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    height: 300px;
+
+    img {
+        height: 300px;
+        width: 300px;
+    }
+
+    p {
+        .ccjNombre {
+            font-size: 2em;
+            color: @ccj-principal;
+        }
+        margin: 25px;
+    }
+}
+
+.separador-secciones {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+
+    .linea {
+        border-bottom: 1px solid @ccj-principal;
+        width: 40%;
+
+        &:first-child {
+            margin-right: 25px;
+        }
+        &:last-child {
+            margin-left: 25px;
+        }
+    }
+
+    i {
+        color: @ccj-secundario;
+        font-size: 2em;
+    }
+}
+
+.separador {
+    height: 1px;
+    width: 90%;
+    margin: 20px 0;
+    border-top: 1px solid @ccj-secundario;
+}

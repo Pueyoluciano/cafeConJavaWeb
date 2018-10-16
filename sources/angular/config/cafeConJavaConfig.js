@@ -1,11 +1,11 @@
 ccjApp.config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
     $routeProvider
         .when("/", {
-            templateUrl: "pages/cafeconjava.html",
+            templateUrl: "pages/principal.html",
             controller: "cafeConJavaController"
         })
-        .when("/principal", {
-            templateUrl: "pages/cafeconjava.html",
+        .when("/cafe_con_java", {
+            templateUrl: "pages/principal.html",
             controller: "cafeConJavaController",
         })
         .when("/temporadas", {

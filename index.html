@@ -6,15 +6,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Café Con Java</title>
-    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
-    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
-    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- escentials -->
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <script src="node_modules/angular/angular.min.js"></script>
     <link rel="shortcut icon" type="image/png" href="resources/icon/ccj.png" />
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/styles.css">
 
     <!-- Angular -->
     <script src="node_modules/angular-route/angular-route.min.js"></script>
@@ -25,16 +25,16 @@
     <header>
         <nav>
             <ul>
-                <li>
-                    <a href="/principal">Café Con Java</a>
+                <li class="pagina activo">
+                    <a href="/cafe_con_java">Café Con Java</a>
                 </li>
-                <li>
+                <li class="pagina">
                     <a href="/temporadas">Temporadas</a>
                 </li>
-                <li>
+                <li class="pagina">
                     <a href="/especiales">Especiales</a>
                 </li>
-                <li>
+                <li class="pagina">
                     <a href="/fotos">fotos!</a>
                 </li>
                 <li class="social-media">
@@ -68,6 +68,8 @@
     <script src="sources/angular/modules/cafeConJavaApp.js"></script>
     <script src="sources/angular/config/cafeConJavaConfig.js"></script>
     <script src="sources/angular/controllers/cafeConJavaController.js"></script>
+
+    <script src="sources/js/navigationToggleActive.js"></script>
 </body>
 
 </html>
