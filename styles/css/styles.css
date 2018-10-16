@@ -125,63 +125,129 @@ body {
   color: lightgray;
   font-family: sansation, serif;
 }
-#CafeConJava header {
+#CafeConJava > header {
   width: 15%;
   align-items: flex-end;
 }
-#CafeConJava header nav ul {
+#CafeConJava > header nav ul {
   list-style-type: none;
   text-align: right;
   margin: 25px 25px 0;
 }
-#CafeConJava header nav ul li {
+#CafeConJava > header nav ul li {
   margin-bottom: 80px;
   border-bottom: 1px solid lightgray;
+  -webkit-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
 }
-#CafeConJava header nav ul li.social-media {
+#CafeConJava > header nav ul li.social-media {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-#CafeConJava header nav ul li.activo {
+#CafeConJava > header nav ul li.activo {
   border-bottom: 1px solid violet;
 }
-#CafeConJava header nav ul li.activo a {
+#CafeConJava > header nav ul li.activo a {
   color: lightblue;
 }
-#CafeConJava header nav ul li:hover {
+#CafeConJava > header nav ul li:hover {
   border-bottom: 1px solid violet;
-  -webkit-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
 }
-#CafeConJava header nav ul a {
+#CafeConJava > header nav ul a {
   text-decoration: none;
   color: lightgray;
   text-transform: uppercase;
-}
-#CafeConJava header nav ul a:hover {
-  color: lightblue;
   -webkit-transition: all 0.2s;
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
+}
+#CafeConJava > header nav ul a:hover {
+  color: lightblue;
 }
 #CafeConJava main {
   width: 85%;
   height: 100vh;
   overflow: hidden;
 }
-#CafeConJava main article {
+#CafeConJava main > article {
   height: 100vh;
   overflow: auto;
   margin-right: -17px;
+  padding: 20px;
 }
 #Principal {
   display: flex;
   flex: 1;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+}
+#Temporadas .temporada .encabezado h2 {
+  color: violet;
+}
+#Temporadas .temporada .encabezado p {
+  color: lightblue;
+}
+#Temporadas .temporada .listado {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+#Temporadas .temporada .listado .episodio {
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.5));
+  height: 400px;
+  width: 300px;
+  margin: 35px;
+  padding: 15px;
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+#Temporadas .temporada .listado .episodio:hover {
+  background-color: violet;
+}
+#Temporadas .temporada .listado .episodio:hover h3 {
+  text-shadow: 1px 1px 3px black;
+  color: black;
+}
+#Temporadas .temporada .listado .episodio:hover .orden {
+  text-shadow: 1px 1px 2px black;
+}
+#Temporadas .temporada .listado .episodio h3 {
+  height: 66px;
+  color: violet;
+  -webkit-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+#Temporadas .temporada .listado .episodio p {
+  color: lightblue;
+}
+#Temporadas .temporada .listado .episodio img {
+  width: 125px;
+  height: 125px;
+  margin: 5px 0 25px 0;
+}
+#Temporadas .temporada .listado .episodio a {
+  text-decoration: none;
+}
+#Temporadas .temporada .listado .episodio .orden {
+  font-size: 1em;
+  color: lightgray;
+  -webkit-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
 }

@@ -30,8 +30,7 @@ body {
     flex: 1;
     color: @ccj-blanco;
     font-family: sansation, serif;
-    // font-size: 2em;
-    header {
+    >header {
         width: 15%;
         align-items: flex-end;
         nav ul {
@@ -41,6 +40,7 @@ body {
             li {
                 margin-bottom: 80px;
                 border-bottom: 1px solid @ccj-blanco;
+                .transitions;
             }
             li.social-media {
                 display: flex;
@@ -55,29 +55,27 @@ body {
             }
             li:hover {
                 border-bottom: 1px solid @ccj-principal;
-                .transitions;
             }
             a {
                 text-decoration: none;
                 color: @ccj-blanco;
                 text-transform: uppercase;
+                .transitions;
             }
             a:hover {
                 color: @ccj-secundario;
-                .transitions;
             }
         }
     }
     main {
         width: 85%;
-        height: 100vh; 
+        height: 100vh;
         overflow: hidden;
-
-        article {
-            height: 100vh; 
-            overflow: auto; 
-            margin-right: -17px; 
-
+        >article {
+            height: 100vh;
+            overflow: auto;
+            margin-right: -17px;
+            padding: 20px;
         }
     }
 }
