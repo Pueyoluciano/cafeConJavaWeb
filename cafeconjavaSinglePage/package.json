@@ -1,0 +1,22 @@
+{
+  "name": "cafeconjava",
+  "version": "1.0.0",
+  "description": "Landing Page de Cafe Con Java",
+  "main": "index.html",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Podcast",
+    "Cafe",
+    "CafeConJava",
+    "Sistemas",
+    "LandingPage"
+  ],
+  "author": "Luciano Pueyo",
+  "license": "MIT"
+}

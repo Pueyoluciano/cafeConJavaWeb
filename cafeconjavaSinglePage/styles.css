@@ -1,0 +1,177 @@
+@font-face {
+  font-family: Roboto;
+  src: url('resources/fonts/roboto/Roboto.ttf');
+}
+@font-face {
+  font-family: Frenchpress;
+  src: url('resources/fonts/frenchpress/Frenchpress.otf');
+}
+.transitions {
+  -webkit-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+#CafeConJava {
+  font-family: Roboto, sans-serif;
+  scroll-behavior: smooth;
+}
+#CafeConJava a {
+  text-decoration: none;
+  color: black;
+}
+#CafeConJava header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background-color: white;
+}
+#CafeConJava header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+}
+#CafeConJava header nav ul li {
+  flex-grow: 1;
+  height: 100%;
+  -webkit-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+#CafeConJava header nav ul li a {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#CafeConJava header nav ul li p {
+  display: block;
+}
+#CafeConJava header nav ul li i {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #CafeConJava header nav ul li p {
+    display: none;
+  }
+  #CafeConJava header nav ul li i {
+    display: block;
+  }
+}
+#CafeConJava header nav ul li:hover {
+  background-color: lightblue;
+}
+#CafeConJava footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 0.75em;
+}
+#CafeConJava #Logo h1 {
+  margin: 50px;
+  height: calc(100vh - 100px);
+  background-color: pink;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#CafeConJava #Logo h1 a {
+  height: 80%;
+}
+#CafeConJava #Logo h1 img {
+  height: 100%;
+}
+#CafeConJava #Logo .alt-logo {
+  display: none;
+}
+#CafeConJava #Social-media {
+  margin: 50px;
+  height: calc(100vh - 100px);
+}
+#CafeConJava #Social-media ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+}
+#CafeConJava #Social-media ul i {
+  font-size: 3em;
+}
+#CafeConJava #Crew {
+  margin: 50px;
+  height: calc(100vh - 100px);
+}
+#CafeConJava #Crew ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#CafeConJava #Crew ul li {
+  background-color: azure;
+  border-radius: 5px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  margin: 50px;
+  padding: 15px;
+  width: 300px;
+  height: 320px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#CafeConJava #Crew ul li .cortina {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: azure;
+  -webkit-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+#CafeConJava #Crew ul li .cortina:hover {
+  opacity: 0.9;
+}
+#CafeConJava #Crew ul li .integrante {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#CafeConJava #Crew ul li .integrante h3 {
+  font-family: Frenchpress;
+  font-size: 3em;
+}
+#CafeConJava #Crew ul li .integrante img {
+  width: 80%;
+  -webkit-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
