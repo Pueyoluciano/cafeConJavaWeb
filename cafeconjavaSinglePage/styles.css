@@ -20,7 +20,8 @@ ul {
   list-style-type: none;
 }
 #CafeConJava {
-  font-family: Roboto, sans-serif;
+  font-family: Frenchpress, sans-serif;
+  font-size: 1.5em;
   scroll-behavior: smooth;
 }
 #CafeConJava a {
@@ -99,22 +100,61 @@ ul {
   display: none;
 }
 #CafeConJava #Social-media {
+  display: flex;
+  flex-direction: column;
   margin: 50px;
-  height: calc(100vh - 100px);
+}
+#CafeConJava #Social-media h2 {
+  margin: 50px 0;
+  text-align: center;
+}
+#CafeConJava #Social-media > p {
+  flex: none;
+  font-size: 2em;
+}
+#CafeConJava #Social-media > p strong {
+  font-size: 1.2em;
 }
 #CafeConJava #Social-media ul {
+  background-color: lightblue;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  flex-grow: 6;
+  padding: 50px;
+  height: 100px;
   list-style-type: none;
 }
-#CafeConJava #Social-media ul i {
-  font-size: 3em;
+#CafeConJava #Social-media ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5em;
+  color: white;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+#CafeConJava #Social-media ul li a:hover i {
+  font-size: 1.75em;
+}
+#CafeConJava #Social-media ul li a i {
+  font-size: 1.5em;
+  -webkit-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
 }
 #CafeConJava #Crew {
   margin: 50px;
-  height: calc(100vh - 100px);
+}
+#CafeConJava #Crew h2 {
+  flex: none;
+  font-size: 2em;
+  text-align: center;
+  padding: 50px;
+}
+#CafeConJava #Crew h2 strong {
+  font-size: 1.2em;
 }
 #CafeConJava #Crew ul {
   display: flex;
@@ -130,7 +170,7 @@ ul {
   margin: 50px;
   padding: 15px;
   width: 300px;
-  height: 320px;
+  height: 350px;
   position: relative;
   top: 0;
   left: 0;
@@ -162,16 +202,22 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
 }
 #CafeConJava #Crew ul li .integrante h3 {
   font-family: Frenchpress;
-  font-size: 3em;
+  font-size: 2em;
 }
-#CafeConJava #Crew ul li .integrante img {
-  width: 80%;
-  -webkit-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
+#CafeConJava #Crew ul li .integrante .contenedor-imagen {
+  padding: 25px 25px 0 25px;
+}
+#CafeConJava #Crew ul li .integrante .contenedor-imagen img {
+  width: 100%;
+}
+#CafeConJava #Episodios {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 100px);
+}
+#CafeConJava #Amigos {
+  height: calc(100vh - 100px);
 }
