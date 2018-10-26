@@ -86,6 +86,13 @@ ul {
         justify-content: space-around;
         font-size: 0.75em;
     }
+    h2 {
+        margin: 50px 0;
+        text-align: center;
+    }
+    .descripcion {
+        text-align: center;
+    }
     #Logo {
         h1 {
             margin: 50px;
@@ -110,11 +117,8 @@ ul {
     #Social-media {
         display: flex;
         flex-direction: column;
-        margin: 50px; // height: ~'calc(100vh - 100px)';
-        h2 {
-            margin: 50px 0;
-            text-align: center;
-        }
+        height: 200px;
+        padding: 50px;
         >p {
             flex: none;
             font-size: 2em; // padding: 50px;
@@ -151,9 +155,13 @@ ul {
             }
         }
     }
+    #Quesomos {
+        margin: 100px;
+        text-align: center;
+        font-size: 1.5em;
+    }
     #Crew {
-        margin: 50px;
-        // height: ~'calc(100vh - 100px)'; // background-color: @ccj-primario;
+        margin: 50px; // height: ~'calc(100vh - 100px)'; // background-color: @ccj-primario;
         h2 {
             flex: none;
             font-size: 2em; // padding: 50px;
@@ -189,9 +197,13 @@ ul {
                     height: 100%;
                     z-index: 2;
                     background-color: azure;
+                    font-size: 1.2em;
                     .transitions;
                     &:hover {
                         opacity: 0.9;
+                    }
+                    p {
+                        margin: 35px;
                     }
                 }
                 .integrante {
@@ -239,12 +251,36 @@ ul {
         //     }
         // }
     }
+    #Fotos {
+        height: ~'calc(100vh - 100px)';
+        .marco {
+            overflow: hidden;
+
+            .row {
+                display: flex;
+                flex-direction: row;
+
+                img {
+                    width: 400px;
+                }
+            }
+        }
+    }
     #Episodios {
         display: flex;
         flex-direction: column;
         height: ~'calc(100vh - 100px)';
     }
     #Amigos {
+        display: flex;
+        flex-direction: column;
         height: ~'calc(100vh - 100px)';
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
     }
 }

@@ -80,6 +80,13 @@ ul {
   justify-content: space-around;
   font-size: 0.75em;
 }
+#CafeConJava h2 {
+  margin: 50px 0;
+  text-align: center;
+}
+#CafeConJava .descripcion {
+  text-align: center;
+}
 #CafeConJava #Logo h1 {
   margin: 50px;
   height: calc(100vh - 100px);
@@ -102,11 +109,8 @@ ul {
 #CafeConJava #Social-media {
   display: flex;
   flex-direction: column;
-  margin: 50px;
-}
-#CafeConJava #Social-media h2 {
-  margin: 50px 0;
-  text-align: center;
+  height: 200px;
+  padding: 50px;
 }
 #CafeConJava #Social-media > p {
   flex: none;
@@ -143,6 +147,11 @@ ul {
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
+}
+#CafeConJava #Quesomos {
+  margin: 100px;
+  text-align: center;
+  font-size: 1.5em;
 }
 #CafeConJava #Crew {
   margin: 50px;
@@ -184,6 +193,7 @@ ul {
   height: 100%;
   z-index: 2;
   background-color: azure;
+  font-size: 1.2em;
   -webkit-transition: all 0.2s;
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -191,6 +201,9 @@ ul {
 }
 #CafeConJava #Crew ul li .cortina:hover {
   opacity: 0.9;
+}
+#CafeConJava #Crew ul li .cortina p {
+  margin: 35px;
 }
 #CafeConJava #Crew ul li .integrante {
   position: absolute;
@@ -213,11 +226,32 @@ ul {
 #CafeConJava #Crew ul li .integrante .contenedor-imagen img {
   width: 100%;
 }
+#CafeConJava #Fotos {
+  height: calc(100vh - 100px);
+}
+#CafeConJava #Fotos .marco {
+  overflow: hidden;
+}
+#CafeConJava #Fotos .marco .row {
+  display: flex;
+  flex-direction: row;
+}
+#CafeConJava #Fotos .marco .row img {
+  width: 400px;
+}
 #CafeConJava #Episodios {
   display: flex;
   flex-direction: column;
   height: calc(100vh - 100px);
 }
 #CafeConJava #Amigos {
+  display: flex;
+  flex-direction: column;
   height: calc(100vh - 100px);
+}
+#CafeConJava #Amigos ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
