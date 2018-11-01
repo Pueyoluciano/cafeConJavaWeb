@@ -16,33 +16,47 @@
   margin: 0;
   padding: 0;
 }
-ul {
-  list-style-type: none;
-}
-#CafeConJava {
+#CafeConJavaWeb {
   font-family: Frenchpress, sans-serif;
-  font-size: 1.5em;
   scroll-behavior: smooth;
 }
-#CafeConJava a {
+@media screen and (max-width: 768px) {
+  #CafeConJavaWeb {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 769px) {
+  #CafeConJavaWeb {
+    font-size: 32px;
+  }
+}
+#CafeConJavaWeb a {
   text-decoration: none;
   color: black;
 }
-#CafeConJava header {
+#CafeConJavaWeb ul {
+  list-style-type: none;
+}
+#CafeConJavaWeb header {
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 99;
   background-color: white;
 }
-#CafeConJava header nav ul {
+#CafeConJavaWeb header nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  height: 50px;
+  height: 30px;
 }
-#CafeConJava header nav ul li {
+@media screen and (min-width: 768px) {
+  #CafeConJavaWeb header nav ul {
+    height: 50px;
+  }
+}
+#CafeConJavaWeb header nav ul li {
   flex-grow: 1;
   height: 100%;
   -webkit-transition: all 0.2s;
@@ -50,141 +64,242 @@ ul {
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
-#CafeConJava header nav ul li a {
+#CafeConJavaWeb header nav ul li a {
   display: flex;
   height: 100%;
   align-items: center;
   justify-content: center;
 }
-#CafeConJava header nav ul li p {
+#CafeConJavaWeb header nav ul li p {
   display: block;
 }
-#CafeConJava header nav ul li i {
+#CafeConJavaWeb header nav ul li i {
   display: none;
 }
 @media screen and (max-width: 768px) {
-  #CafeConJava header nav ul li p {
+  #CafeConJavaWeb header nav ul li p {
     display: none;
   }
-  #CafeConJava header nav ul li i {
+  #CafeConJavaWeb header nav ul li i {
     display: block;
   }
 }
-#CafeConJava header nav ul li:hover {
-  background-color: lightblue;
+#CafeConJavaWeb header nav ul li:hover {
+  background-color: lavender;
 }
-#CafeConJava footer {
+#CafeConJavaWeb footer {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   justify-content: space-around;
   font-size: 0.75em;
 }
-#CafeConJava h2 {
-  margin: 50px 0;
-  text-align: center;
+#CafeConJavaWeb section {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 50px);
+  padding: 25px;
 }
-#CafeConJava .descripcion {
-  text-align: center;
+@media screen and (min-width: 768px) {
+  #CafeConJavaWeb section {
+    min-height: calc(100vh - 100px);
+    padding: 50px;
+  }
 }
-#CafeConJava #Logo h1 {
-  margin: 50px;
-  height: calc(100vh - 100px);
-  background-color: pink;
-  text-align: center;
+#CafeConJavaWeb section .contenido {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-grow: 1;
+  padding: 25px;
+  box-sizing: border-box;
+  width: 100%;
 }
-#CafeConJava #Logo h1 a {
-  height: 80%;
+@media screen and (min-width: 768px) {
+  #CafeConJavaWeb section .contenido {
+    padding: 50px;
+  }
 }
-#CafeConJava #Logo h1 img {
+#CafeConJavaWeb .galeria-marco {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, #000000 25%, #000000 75%, rgba(0, 0, 0, 0.5) 100%);
 }
-#CafeConJava #Logo .alt-logo {
-  display: none;
-}
-#CafeConJava #Social-media {
-  display: flex;
-  flex-direction: column;
-  height: 200px;
-  padding: 50px;
-}
-#CafeConJava #Social-media > p {
-  flex: none;
-  font-size: 2em;
-}
-#CafeConJava #Social-media > p strong {
-  font-size: 1.2em;
-}
-#CafeConJava #Social-media ul {
-  background-color: lightblue;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-grow: 6;
-  padding: 50px;
-  height: 100px;
-  list-style-type: none;
-}
-#CafeConJava #Social-media ul li a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 1.5em;
-  color: white;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-}
-#CafeConJava #Social-media ul li a:hover i {
-  font-size: 1.75em;
-}
-#CafeConJava #Social-media ul li a i {
-  font-size: 1.5em;
+#CafeConJavaWeb .galeria-marco .galeria-contenedor {
+  flex-grow: 1;
+  white-space: nowrap;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
   -webkit-transition: all 0.2s;
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
-#CafeConJava #Quesomos {
-  margin: 100px;
+#CafeConJavaWeb .galeria-marco .galeria-contenedor figure {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
   text-align: center;
-  font-size: 1.5em;
 }
-#CafeConJava #Crew {
-  margin: 50px;
+#CafeConJavaWeb .galeria-marco .galeria-contenedor figure img {
+  max-height: 100%;
+  max-width: 100%;
 }
-#CafeConJava #Crew h2 {
+#CafeConJavaWeb .galeria-marco .galeria-contenedor figure .leyenda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100px;
+  bottom: 10%;
+}
+#CafeConJavaWeb .galeria-marco .galeria-contenedor figure .leyenda .titulo {
+  color: pink;
+}
+#CafeConJavaWeb .galeria-marco .galeria-contenedor figure .leyenda .detalle {
+  color: lavender;
+  font-size: 0.9em;
+}
+#CafeConJavaWeb .galeria-marco .control {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 10%;
+  color: white;
+}
+#CafeConJavaWeb .galeria-marco .control.izquierda {
+  align-items: flex-start;
+  left: 0;
+}
+#CafeConJavaWeb .galeria-marco .control.derecha {
+  align-items: flex-end;
+  right: 0;
+}
+#CafeConJavaWeb .galeria-marco .miniaturas {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#CafeConJavaWeb .galeria-marco .miniaturas .miniatura {
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  background-color: red;
+}
+#CafeConJavaWeb #CafeConJava .contenido {
+  background-color: pink;
+}
+#CafeConJavaWeb #CafeConJava .contenido .alt-logo {
+  display: none;
+}
+#CafeConJavaWeb #CafeConJava .contenido h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 200px);
+}
+#CafeConJavaWeb #CafeConJava .contenido img {
+  max-height: 100%;
+  max-width: 100%;
+  filter: invert(100);
+}
+#CafeConJavaWeb #Mision {
+  min-height: initial;
+}
+#CafeConJavaWeb #Mision .contenido {
+  background-color: lavender;
+}
+#CafeConJavaWeb #Mision .contenido .separador {
+  border-bottom: 2px solid white;
+  height: 1px;
+  width: 70%;
+  margin: 10px 0;
+}
+@media screen and (min-width: 768px) {
+  #CafeConJavaWeb #Mision .contenido .separador {
+    margin: 50px 0;
+  }
+}
+#CafeConJavaWeb #Mision .contenido ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+#CafeConJavaWeb #Mision .contenido ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+#CafeConJavaWeb #Mision .contenido ul li a:hover {
+  text-shadow: 3px 3px 6px pink;
+  color: white;
+}
+@media screen and (max-width: 767px) {
+  #CafeConJavaWeb #Mision .contenido ul li a p {
+    display: none;
+  }
+}
+#CafeConJavaWeb #Crew .contenido {
+  min-height: calc(100vh - 100px);
+  background-color: #f6f6ff;
+}
+#CafeConJavaWeb #Crew .contenido h2 {
   flex: none;
   font-size: 2em;
   text-align: center;
-  padding: 50px;
 }
-#CafeConJava #Crew h2 strong {
-  font-size: 1.2em;
-}
-#CafeConJava #Crew ul {
+#CafeConJavaWeb #Crew .contenido ul {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-#CafeConJava #Crew ul li {
-  background-color: azure;
+#CafeConJavaWeb #Crew .contenido ul li {
+  background-color: lavender;
   border-radius: 5px;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-  margin: 50px;
+  margin: 25px;
   padding: 15px;
-  width: 300px;
-  height: 350px;
+  width: 96px;
+  height: 112px;
   position: relative;
   top: 0;
   left: 0;
 }
-#CafeConJava #Crew ul li .cortina {
+@media screen and (min-width: 768px) {
+  #CafeConJavaWeb #Crew .contenido ul li {
+    width: 300px;
+    height: 350px;
+  }
+}
+#CafeConJavaWeb #Crew .contenido ul li .cortina {
   opacity: 0;
   position: absolute;
   top: 0;
@@ -192,20 +307,24 @@ ul {
   width: 100%;
   height: 100%;
   z-index: 2;
-  background-color: azure;
-  font-size: 1.2em;
+  background-color: lavender;
   -webkit-transition: all 0.2s;
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
-#CafeConJava #Crew ul li .cortina:hover {
+#CafeConJavaWeb #Crew .contenido ul li .cortina:hover {
   opacity: 0.9;
 }
-#CafeConJava #Crew ul li .cortina p {
-  margin: 35px;
+#CafeConJavaWeb #Crew .contenido ul li .cortina p {
+  margin: 12px;
 }
-#CafeConJava #Crew ul li .integrante {
+@media screen and (min-width: 768px) {
+  #CafeConJavaWeb #Crew .contenido ul li .cortina p {
+    margin: 35px;
+  }
+}
+#CafeConJavaWeb #Crew .contenido ul li .integrante {
   position: absolute;
   z-index: 1;
   top: 0;
@@ -216,42 +335,23 @@ ul {
   flex-direction: column;
   align-items: center;
 }
-#CafeConJava #Crew ul li .integrante h3 {
-  font-family: Frenchpress;
-  font-size: 2em;
+#CafeConJavaWeb #Crew .contenido ul li .integrante h3 {
+  font-size: 1.3em;
 }
-#CafeConJava #Crew ul li .integrante .contenedor-imagen {
-  padding: 25px 25px 0 25px;
+#CafeConJavaWeb #Crew .contenido ul li .integrante .contenedor-imagen {
+  padding: 10px 10px 0 10px;
 }
-#CafeConJava #Crew ul li .integrante .contenedor-imagen img {
+@media screen and (min-width: 768px) {
+  #CafeConJavaWeb #Crew .contenido ul li .integrante .contenedor-imagen {
+    padding: 25px 25px 0 25px;
+  }
+}
+#CafeConJavaWeb #Crew .contenido ul li .integrante .contenedor-imagen img {
   width: 100%;
 }
-#CafeConJava #Fotos {
-  height: calc(100vh - 100px);
+#CafeConJavaWeb #Episodios .contenido {
+  background-color: pink;
 }
-#CafeConJava #Fotos .marco {
-  overflow: hidden;
-}
-#CafeConJava #Fotos .marco .row {
-  display: flex;
-  flex-direction: row;
-}
-#CafeConJava #Fotos .marco .row img {
-  width: 400px;
-}
-#CafeConJava #Episodios {
-  display: flex;
-  flex-direction: column;
-  height: calc(100vh - 100px);
-}
-#CafeConJava #Amigos {
-  display: flex;
-  flex-direction: column;
-  height: calc(100vh - 100px);
-}
-#CafeConJava #Amigos ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+#CafeConJavaWeb #Fotos .contenido {
+  background-color: lavender;
 }

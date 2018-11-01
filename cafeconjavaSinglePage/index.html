@@ -6,23 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Café Con Java</title>
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
+    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
-<body id="CafeConJava">
+<body id="CafeConJavaWeb">
     <header>
         <nav>
             <ul>
                 <li>
-                    <a href="#Principal">
+                    <a href="#CafeConJava">
                         <p>Café Con Java</p>
                         <i class="fas fa-coffee"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#Social-media">
-                        <p>redes sociales</p>
+                    <a href="#Mision">
+                        <p>Misión</p>
                         <i class="fas fa-bell"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#Crew">
+                        <p>Les Muchaches</p>
+                        <i class="fas fa-bolt"></i>
                     </a>
                 </li>
                 <li>
@@ -47,16 +56,18 @@
         </nav>
     </header>
     <main>
-        <article id="Principal">
-            <section id="Logo">
-                <h1>
-                    <a href="#">
-                        <img src="resources/images/cafeConJava_alfa.png" alt="Cafe Con Java Logo">
-                    </a>
-                    <span class="alt-logo">Café Con Java</span>
-                </h1>
-            </section>
-            <section id="Quesomos">
+        <section id="CafeConJava">
+            <div class="contenido">
+                <a href="#CafeConJava">
+                    <h1>
+                        <img src="resources/images/cafeConJava_alfa_blancas.png" alt="Cafe Con Java Logo">
+                        <span class="alt-logo">Café Con Java</span>
+                    </h1>
+                </a>
+            </div>
+        </section>
+        <section id="Mision">
+            <div class="contenido">
                 <p>
                     Somos un
                     <strong>podcast</strong>. No hablamos de
@@ -64,26 +75,27 @@
                     <i>java</i> (bueno un poco quizás si).
                     <br> Queremos entender al individuo de
                     <strong>sistemas</strong>, sus miedos, sus pasiones, su visión del mundo.
+                    <br>Nos gusta el rack, el alcohol y las papas con cheddar.
+                    <br>asd asd asd asdasdasdasd asd asd.
                 </p>
-            </section>
-            <section id="Social-media">
+                <div class="separador"></div>
                 <ul>
                     <li>
                         <a href="https://open.spotify.com/show/0TVlDun02hUMkQXEs33rRe" target="_blank">
                             <i class="fab fa-spotify"></i>
-                            Spotify
+                            <p>Spotify</p>
                         </a>
                     </li>
                     <li>
                         <a href="https://audioboom.com/channels/4954389" target="_blank">
                             <i class="fas fa-headphones-alt"></i>
-                            AudioBoom
+                            <p>AudioBoom</p>
                         </a>
                     </li>
                     <li>
                         <a href="https://itunes.apple.com/us/podcast/caf%C3%A9-con-java/id1370446937?mt=2" target="_blank">
                             <i class="fas fa-podcast"></i>
-                            Apple Podcasts
+                            <p>Apple Podcasts</p>
                         </a>
                     </li>
                     <li>
@@ -105,9 +117,10 @@
                         </a>
                     </li>
                 </ul>
-            </section>
-
-            <section id="Crew">
+            </div>
+        </section>
+        <section id="Crew">
+            <div class="contenido">
                 <h2>La presigiosa Crew de Café Con Java</h2>
                 <p class="descripcion">Porque toda embarcación necesita marineros fuertes para hizar las velas</p>
                 <ul>
@@ -202,70 +215,101 @@
                         </div>
                     </li>
                 </ul>
-            </section>
-        </article>
-        <article id="Episodios">
-            <section id="Temporadas">
-                <h2>Temporadas</h2>
-                <section>
-                    <h3>Temporada 2</h3>
-                    <ol>
-                        <li>Ep 0</li>
-                        <li>Ep 1</li>
-                        <li>proximamente</li>
-                    </ol>
-                </section>
-                <section>
-                    <h3>Temporada 1</h3>
-                    <ol>
-                        <li>Ep 0</li>
-                        <li>Ep 1</li>
-                        <li>Ep 2</li>
-                        <li>Ep 3</li>
-                        <li>Ep 4</li>
-                        <li>Ep 5</li>
-                    </ol>
-                </section>
-            </section>
-            <section id="Especiales">
-                <h2>Especiales</h2>
-                <ol>
-                    <li>Especial 1</li>
-                    <li>Especial 2</li>
-                    <li>Especial 3</li>
-                </ol>
-            </section>
-        </article>
-        <article id="Fotos">
-            <h2>Fotos</h2>
-            <div class="marco">
-                <div class="row">
-                    <img src="1.jpg" alt="1">
-                    <img src="2.jpg" alt="2">
-                    <img src="3.jpg" alt="3">
+            </div>
+        </section>
+        <section id="Episodios">
+            <div class="contenido">
+
+            </div>
+        </section>
+        <section id="Fotos">
+            <div class="contenido">
+                <div class="galeria-marco">
+                    <div class="galeria-contenedor">
+                        <figure class="galeria-item">
+                            <img src="resources/images/_DSC2194.JPG">
+                            <figcaption>
+                                <p class="leyenda">
+                                    Episodio 4 - La educación en sistemas
+                                </p>
+                                <p class="detalle">
+                                    vamos los pibes
+                                </p>
+                            </figcaption>
+                        </figure><!-- asd
+                        --><figure class="galeria-item">
+                            <img src="resources/images/HayEquipo.jpg">
+                            <figcaption>
+                                <p class="leyenda">
+
+                                </p>
+                                <p class="detalle">
+
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <!--
+                        -->
+                        <figure class="galeria-item">
+                            <img src="resources/images/_DSC1820.JPG">
+                            <figcaption>
+                                <p class="leyenda">
+
+                                </p>
+                                <p class="detalle">
+
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <!--
+                        -->
+                        <figure class="galeria-item">
+                            <img src="resources/images/_DSC2050.JPG">
+                            <figcaption>
+                                <p class="leyenda">
+
+                                </p>
+                                <p class="detalle">
+
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <!--
+                        -->
+                        <figure class="galeria-item">
+                            <img src="resources/images/_DSC1824.JPG">
+                            <figcaption>
+                                <p class="leyenda">
+
+                                </p>
+                                <p class="detalle">
+
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="control izquierda">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                    <div class="control derecha">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div class="miniaturas"></div>
                 </div>
             </div>
-        </article>
-        <article id="Amigos">
-            <h2>Amigos</h2>
-            <ul>
-                <li>
-                    <p>Gracias</p>
-                    Cultural Bombing
-                    <p>Por musicalizar CCJ </p>
-                </li>
-                <li><p>Gracias</p>
-                    Radio En Casa
-                    <p>Por abrirnos las puertas de tu hogar</p>
-                </li>
-            </ul>
-        </article>
+        </section>
+        <section id="Amigos">
+            <div class="contenido">
+
+            </div>
+        </section>
     </main>
     <footer>
-        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
             <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /> Esta obra está bajo una Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional.
         </a>
     </footer>
+    <script type='text/javascript' src='sources/carousel.js'></script>
 </body>
 
 </html>
