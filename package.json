@@ -1,27 +1,24 @@
 {
-  "name": "cafeconjavaweb",
+  "name": "cafeconjava",
   "version": "1.0.0",
-  "description": "Cafe Con Java Web Page",
-  "main": "sources/main.js",
+  "description": "Landing Page de Cafe Con Java",
+  "main": "index.html",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.4.1",
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pepitogithub/cafeConJavaWeb.git"
-  },
+  "keywords": [
+    "Podcast",
+    "Cafe",
+    "CafeConJava",
+    "Sistemas",
+    "LandingPage"
+  ],
   "author": "Luciano Pueyo",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pepitogithub/cafeConJavaWeb/issues"
-  },
-  "homepage": "https://github.com/pepitogithub/cafeConJavaWeb#readme",
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.1.0",
-    "angular": "^1.7.2",
-    "angular-resource": "^1.7.2",
-    "angular-route": "^1.7.2",
-    "bootstrap": "^4.1.2",
-    "jquery": "^3.3.1"
-  }
+  "license": "MIT"
 }

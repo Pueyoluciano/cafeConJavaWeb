@@ -2,74 +2,245 @@
 <html lang="es">
 
 <head>
-    <base href="/">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Café Con Java</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <!-- escentials -->
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
-    <script src="node_modules/angular/angular.min.js"></script>
-    <link rel="shortcut icon" type="image/png" href="resources/icon/ccj.png" />
-    <link rel="stylesheet" type="text/css" href="styles/css/styles.css">
-
-    <!-- Angular -->
-    <script src="node_modules/angular-route/angular-route.min.js"></script>
-    <script src="node_modules/angular-resource/angular-resource.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="shortcut icon" type="image/png" href="resources/icon/favicon.png"/>
 </head>
 
-<body id="CafeConJava" ng-app="cafeConJavaApp" ng-controller="cafeConJavaController">
+<body id="CafeConJavaWeb">
     <header>
         <nav>
             <ul>
-                <li class="pagina activo">
-                    <a href="/cafe_con_java">Café Con Java</a>
-                </li>
-                <li class="pagina">
-                    <a href="/temporadas">Temporadas</a>
-                </li>
-                <li class="pagina">
-                    <a href="/especiales">Especiales</a>
-                </li>
-                <li class="pagina">
-                    <a href="/fotos">fotos!</a>
-                </li>
-                <li class="social-media">
-                    <a href="https://www.facebook.com/cafeconjavapod/" target="_blank">
-                        <i class="fab fa-facebook-square"></i>
+                <li>
+                    <a href="#CafeConJava">
+                        <p>Café Con Java</p>
+                        <i class="fas fa-coffee"></i>
                     </a>
-                    <a href="https://www.instagram.com/cafeconjavapod/" target="_blank">
-                        <i class="fab fa-instagram"></i>
+                </li>
+                <li>
+                    <a href="#Mision">
+                        <p>Misión</p>
+                        <i class="fas fa-bell"></i>
                     </a>
-                    <a href="https://twitter.com/cafeconjavapod/" target="_blank">
-                        <i class="fab fa-twitter"></i>
+                </li>
+                <li>
+                    <a href="#Crew">
+                        <p>La Crew</p>
+                        <i class="fas fa-bolt"></i>
                     </a>
-                    <a href="https://open.spotify.com/search/results/Caf%C3%A9%20Con%20Java" target="_blank">
-                        <i class="fab fa-spotify"></i>
+                </li>
+                <!-- <li>
+                    <a href="#Episodios">
+                        <p>Temporadas</p>
+                        <i class="fas fa-microphone"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#Fotos">
+                        <p>Fotos!</p>
+                        <i class="fas fa-camera"></i>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="#Amigos">
+                        <p>Amigos</p>
+                        <i class="fas fa-user-friends"></i>
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <article ng-view></article>
+        <section id="CafeConJava">
+            <div class="contenido">
+                <a href="#CafeConJava">
+                    <h1>
+                        <img src="resources/images/cafeConJava_alfa_blancas.png" alt="Cafe Con Java Logo">
+                        <span class="alt-logo">Café Con Java</span>
+                    </h1>
+                </a>
+            </div>
+        </section>
+        <section id="Mision">
+            <div class="contenido">
+                <p>
+                    Nuestra misión es contarle al mundo
+                    <strong>qué significa</strong> ser un individuo de sistemas.
+                    <br>¿Cómo piensan? ¿Cómo interactúan con el mundo? ¿Cómo ve la sociedad a éstos seres tan especiales?
+                    <br>Para lograrlo, buscamos a los personajes menos capacitados para tal fin; un grupo de amigos que trabajan
+                    y estudian en el rubro, ellos son la
+                    <strong>Crew</strong> de Café con Java.
+                    <br><br>A través de sus experiencias y basto conocimiento en el área, nos cuentan cada detalle sobre este maravilloso
+                    mundo.
+                    <br> En este
+                    <strong>podcast</strong>. No hablamos de
+                    <i>café</i>ni tampoco hablamos de
+                    <i>Java</i> (bueno un poco quizás si).
+                    <br>Acompañanos en este viaje de conocimiento y diversión.
+                </p>
+                <div class="separador"></div>
+                <ul>
+                    <li>
+                        <a href="https://open.spotify.com/show/0TVlDun02hUMkQXEs33rRe" target="_blank">
+                            <i class="fab fa-spotify"></i>
+                            <p>Spotify</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://audioboom.com/channels/4954389" target="_blank">
+                            <i class="fas fa-headphones-alt"></i>
+                            <p>AudioBoom</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://itunes.apple.com/us/podcast/caf%C3%A9-con-java/id1370446937?mt=2" target="_blank">
+                            <i class="fas fa-podcast"></i>
+                            <p>Apple Podcasts</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/cafeconjavapod/" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                            <p>/cafeconjavapod</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/cafeconjavapod/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <p>/cafeconjavapod</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/cafeconjavapod" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                            <p>/cafeconjavapod</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="Crew">
+            <div class="contenido">
+                <h2>La presigiosa Crew de Café Con Java</h2>
+                <p class="descripcion">No son los mejores, tampoco fueron nuestra primera opción, pero le ponen un montón de garra</p>
+                <ul>
+                    <li>
+                        <div class="cortina">
+                            <p>
+                                <strong>El Dudu</strong>, Oriundo del barrio de Liniers.
+                                <br>Productor de radio veterano, encontró en el mundo podcasteril un mundo de oportunidades.
+                                <br>"<i>Las tortillas DEBEN ser babé</i>."
+                            </p>
+                        </div>
+                        <div class="integrante">
+                            <div class="contenedor-imagen">
+                                <img src="resources/images/dudu_small.JPG">
+                            </div>
+                            <h3>Federico Rusconi</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cortina">
+                            <p>
+                                <strong>Lucho</strong>, Caballito lo vió nacer, y hasta ahora no lo vió hacer otra cosa bien.
+                                <br>Quería ser músico pero le dió para bajista.
+                                <br>"<i>No es por presumir, pero puedo comer un alfajor en dos bocados</i>."
+                            </p>
+                        </div>
+                        <div class="integrante">
+                            <div class="contenedor-imagen">
+                                <img src="resources/images/lucho_small.jpg">
+                            </div>
+                            <h3>Luciano Pueyo</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cortina">
+                            <p>
+                                <strong>Bernie Pau</strong>, nacido en el barrio de San Isidro.
+                                <br>Vivió muchos años al lado del konex, forjando en él un fuerte sentir por la música indie.
+                                <br>"<i>La intransigencia del ser no es más que la sempiterna idea de revolución alocada en el ánima.</i>"
+                            </p>
+                        </div>
+                        <div class="integrante">
+                            <div class="contenedor-imagen">
+                                <img src="resources/images/bernie_small.jpg">
+                            </div>
+                            <h3>Bernie Pau</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cortina">
+                            <p>
+                                <strong>El Cris</strong>, criado en la Paternal,
+                                <br> Es de River pero su amor es el beach handball.
+                                <br>"<i>No importa de donde seas, tengo una anécdota ahí</i>".
+                            </p>
+                        </div>
+                        <div class="integrante">
+                            <div class="contenedor-imagen">
+                                <img src="resources/images/cris_small.jpg">
+                            </div>
+                            <h3>Cristian Breitman</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cortina">
+                            <p>
+                                <strong>Mati Dash</strong>, nacido en Liniers.
+                                <br>Le gusta la fotografía y las Raves, que son como fiestas electrónicas, pero no tanto.
+                                <br>"<i>En mis ratos libres organizo peleas callejeras entre escarabajos. O podría ser cangrejos,
+                                    no se que es más gracioso."</i>
+                            </p>
+                        </div>
+                        <div class="integrante">
+                            <div class="contenedor-imagen">
+                                <img src="resources/images/mati_small.jpg">
+                            </div>
+                            <h3>Mati Aristimuño</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cortina">
+                            <p>
+                                <strong>La Mecha</strong>, nacida en Paraná.
+                                <br>Su pokemón favorito es Charizard. Se sabe que el mejor es Gyarados, pero bueno.
+                                <br>"<i>Si tuviera que elegir entre seguir haciendo Café con Java o comer reboque, ya estaría yendo
+                                    a buscar el fratacho</i>."
+                            </p>
+                        </div>
+                        <div class="integrante">
+                            <div class="contenedor-imagen">
+                                <img src="resources/images/mechi_small.jpg">
+                            </div>
+                            <h3>Mechi Valle</h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="Amigos">
+            <div class="contenido">
+                <ul>
+                    <li>
+                        <p>Gracias</p>
+                        <a href="https://es-la.facebook.com/CulturalBombing/">Cultural Bombing</a>
+                        <p> por todo el groove que le dan a Café con Java</p>
+                    </li>
+                    <li>Gracias <a href="https://www.radioencasa.com/">Radio en Casa</a> por grabarnos y darnos brebajes los domingos por la noche</li>
+                </ul>
+            </div>
+        </section>
     </main>
-    <!-- <footer>
-            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
-                <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
-            </a>
-            <br />Esta obra está bajo una
-            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.
-        </footer> -->
-
-    <script src="sources/angular/modules/cafeConJavaApp.js"></script>
-    <script src="sources/angular/config/cafeConJavaConfig.js"></script>
-    <script src="sources/angular/controllers/cafeConJavaController.js"></script>
-
-    <script src="sources/js/navigationToggleActive.js"></script>
+    <footer>
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+            <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /> Esta obra está bajo una Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional.
+        </a>
+    </footer>
+    <script type='text/javascript' src='sources/carousel.js'></script>
 </body>
 
 </html>
