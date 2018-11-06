@@ -8,10 +8,15 @@
     src: url('../resources/fonts/frenchpress/Frenchpress.otf');
 }
 
-@ccj-primario: rgb(255, 192, 203);
-@ccj-secundario: rgb(230, 230, 250);
-@ccj-terciario: rgb(246, 246, 255);
-
+@ccj-primario: rgb(255,
+192,
+203);
+@ccj-secundario: rgb(230,
+230,
+250);
+@ccj-terciario: rgb(246,
+246,
+255);
 .linearGradient(@to,
 @colorFrom,
 @colorTo) {
@@ -109,13 +114,11 @@
         align-items: center;
         justify-content: center;
         font-size: 0.5em;
-
-        a{
+        a {
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
-
             img {
                 width: 13%;
             }
@@ -176,11 +179,9 @@
                     margin: 25px 0;
                 }
             }
-
             p {
                 line-height: 1.2;
             }
-
             ul {
                 display: flex;
                 flex-wrap: wrap;
@@ -219,7 +220,6 @@
                 font-size: 2em;
                 text-align: center;
             }
-
             .descripcion {
                 margin: 16px;
             }
@@ -259,11 +259,16 @@
                         }
                         p {
                             margin: 12px;
-                            @media screen and(min-width: 768px) {
-                                margin: 35px;
-                            }
+                            font-size: 0.8em;
                             i {
                                 font-size: 0.8em;
+                            }
+                            @media screen and(min-width: 768px) {
+                                margin: 35px;
+                                font-size: 1em;
+                                i {
+                                    font-size: 0.8em;
+                                }
                             }
                         }
                     }
@@ -286,7 +291,7 @@
                                 padding: 25px 25px 0 25px;
                             }
                             img {
-                                width: 100%; // .transitions;
+                                width: 100%;
                             }
                         }
                     }
@@ -294,28 +299,33 @@
             }
         }
     }
-
     #Amigos {
-        .contenido{
+        .contenido {
             background-color: @ccj-secundario;
-
+            justify-content: space-around;
             a {
                 font-weight: bold;
             }
-
+            h2 {
+                text-align: center;
+            }
             ul {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-around;
                 width: 100%;
-                li{
+                li {
+                    width: 50%;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                }
 
+                    p {
+                        text-align: center;
+                    }
+                }
             }
         }
     }

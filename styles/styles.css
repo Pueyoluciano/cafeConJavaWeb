@@ -255,14 +255,19 @@
 }
 #CafeConJavaWeb #Crew .contenido ul li .cortina p {
   margin: 12px;
+  font-size: 0.8em;
+}
+#CafeConJavaWeb #Crew .contenido ul li .cortina p i {
+  font-size: 0.8em;
 }
 @media screen and (min-width: 768px) {
   #CafeConJavaWeb #Crew .contenido ul li .cortina p {
     margin: 35px;
+    font-size: 1em;
   }
-}
-#CafeConJavaWeb #Crew .contenido ul li .cortina p i {
-  font-size: 0.8em;
+  #CafeConJavaWeb #Crew .contenido ul li .cortina p i {
+    font-size: 0.8em;
+  }
 }
 #CafeConJavaWeb #Crew .contenido ul li .integrante {
   position: absolute;
@@ -291,9 +296,13 @@
 }
 #CafeConJavaWeb #Amigos .contenido {
   background-color: #e6e6fa;
+  justify-content: space-around;
 }
 #CafeConJavaWeb #Amigos .contenido a {
   font-weight: bold;
+}
+#CafeConJavaWeb #Amigos .contenido h2 {
+  text-align: center;
 }
 #CafeConJavaWeb #Amigos .contenido ul {
   display: flex;
@@ -303,8 +312,12 @@
   width: 100%;
 }
 #CafeConJavaWeb #Amigos .contenido ul li {
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+#CafeConJavaWeb #Amigos .contenido ul li p {
+  text-align: center;
 }
